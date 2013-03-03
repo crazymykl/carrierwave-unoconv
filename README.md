@@ -28,6 +28,9 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
 end
 ```
+
+You also should start an `unoconv` listener when your app starts, otherwise there may be issues with concurrency.
+
 ## Method implemented
 
     uno_convert
